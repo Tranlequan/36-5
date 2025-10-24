@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
+    private Background background;
+
     private Ball ball;
     private Paddle paddle;
     private List<Brick> bricks = new ArrayList<>();
@@ -19,6 +21,8 @@ public class Game {
     public void start(Stage stage) {
         Group root = new Group();
         Scene scene = new Scene(root, 600, 600, Color.BLACK);
+        background = new Background(root, 600, 600);
+
 
         paddle = new Paddle(250, 550, 100, 15);
         ball = new Ball(300, 400, 10);
@@ -58,6 +62,8 @@ public class Game {
     }
 
     private void update(Scene scene) {
+        background.update();
+
         if (leftPressed) paddle.moveLeft();
         if (rightPressed) paddle.moveRight(scene.getWidth());
 
