@@ -6,11 +6,14 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage stage) {
-        Game game = new Game();
-        game.start(stage);
+        MenuScene menu = new MenuScene(stage);
+        stage.setTitle("Arkanoid FX");
+        stage.setScene(menu.getScene());
+        stage.show();
     }
 
     public static void main(String[] args) {
         launch();
     }
 }
+
