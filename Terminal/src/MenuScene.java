@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package sample.Terminal.src;
+=======
+package sample;
+>>>>>>> 646faad606a4d29b95ef92fe490323b5955812e2
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
