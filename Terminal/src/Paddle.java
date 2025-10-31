@@ -1,4 +1,4 @@
-package sample;
+package sample.Terminal.src;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;

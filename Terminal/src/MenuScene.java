@@ -1,4 +1,4 @@
-package sample;
+package sample.Terminal.src;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

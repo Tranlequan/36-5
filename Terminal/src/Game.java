@@ -1,4 +1,4 @@
-package sample;
+package sample.Terminal.src;
 
 import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
